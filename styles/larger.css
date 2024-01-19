@@ -1,0 +1,18 @@
+@media only screen and (min-width: 720px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav li {
+        flex: 1;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
