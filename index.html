@@ -13,7 +13,6 @@
     <meta name="WDD 230 - Web Frontend Development" content="Rory Nye course assignment portal">
     <meta name="description" content="WDD 230 - Web Frontend Development, Rory Nye, Course Assignment Portal">
     <meta name="author" content="Rory Nye">
-
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/Base.css">
     <link rel="icon" href="favicon.ico">
@@ -25,7 +24,10 @@
         <img class="profile-img" src="./images/me.jpg" alt="pf pic">
         <h1>Rory Nye</h1>
     </header>
-    <nav>
+    <div style="display: flex; padding:0; margin:0; justify-content: start; flex-direction: column; width: 60%;">
+        <a id="menu" href="#"></a>
+    </div>
+    <nav class="navigation">
         <a href="#">Home</a>
         <a href="lesson03/chamber-site-plan.html">Site Plan</a>
         <a href="chamber/">Chamber</a>
@@ -42,7 +44,8 @@
                     <li>01</li>
                     <li>02: <a href="./lesson02/design.html">Design Principles Document</a> | <a
                             href="./lesson02/media-query.html">Media Query</a></li>
-                    <li>03: <a href="https://codepen.io/Rnye/pen/gOExrrj"> Psuedo Elements</a></li>
+                    <li>03: <a href="https://codepen.io/Rnye/pen/gOExrrj"> Psuedo Elements <a
+                                href="https://codepen.io/Rnye/pen/jOJLqxE">hamburger Menu</a></li>
                     <li>04</li>
                     <li>05</li>
                     <li>06</li>
@@ -57,6 +60,9 @@
             </section>
         </div>
     </main>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.352762208953!2d-111.97107698509119!3d41.223004979277686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8753a6dbb3fefa15%3A0xd999e6033a02a0ac!2sOgden%2C%20UT!5e0!3m2!1sen!2sus!4v1643300037559!5m2!1sen!2sus"
+        width="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <footer>
         <p>
             &copy;
@@ -69,7 +75,8 @@
         </div>
         <p id="lastModified"></p>
     </footer>
-    <script src="getdates.js"></script>
+    <script src="./hamburger.js"></script>
+    <script src="./getdates.js"></script>
 </body>
 
 </html>
