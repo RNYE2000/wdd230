@@ -1,0 +1,56 @@
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #3498db;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#primary-color {
+    color: #75add2;
+}
+
+#secondary-color {
+    background-color: #595a59;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.small-image {
+    width: 10%;
+    height: auto;
+    padding-left: 10px;
+}
