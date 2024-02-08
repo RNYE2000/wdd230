@@ -1,0 +1,28 @@
+@media only screen and (min-width: 40em) {
+
+    .flag {
+        display: block;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation-full {
+        display: flex;
+        width: 50%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a:hover {
+        background-color: darken(#666, 20%);
+    }
+}
