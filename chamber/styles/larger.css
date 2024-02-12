@@ -17,12 +17,58 @@
         width: 50%;
     }
 
+    .navigation-full {
+        background-color: darken(#666, 20%);
+    }
+
     nav {
         display: flex;
         justify-content: space-around;
     }
 
     nav a:hover {
-        background-color: darken(#666, 20%);
+        border-bottom: 2px solid white;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+
+    .overlay button {
+        width: 500px;
+    }
+
+    .overlay button:hover {
+        box-shadow: 0 0 10px 8px lightgray;
+    }
+
+    .card {
+        height: 250px;
+    }
+
+    .card-header h5 {
+        font-size: 32px;
+    }
+
+    .events {
+        width: 75%;
+    }
+
+    .weather {
+        width: 25%;
+    }
+
+    #member-spotlight .section-header {
+        display: none;
+    }
+
+    #member-spotlight .card {
+        width: 33%;
+    }
+
+    section {
+        display: flex;
     }
 }

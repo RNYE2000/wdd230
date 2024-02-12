@@ -1,7 +1,7 @@
 html,
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,6 @@ header {
     justify-content: space-between;
     color: white;
     background-color: #666;
-    padding: 5px;
     align-items: center;
 }
 
@@ -36,9 +35,9 @@ header {
 }
 
 .menu-container {
-    margin-right: 10px;
     border: 1px solid white;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
 #menu {
@@ -72,10 +71,143 @@ nav {
     display: none;
 }
 
+.navigation {
+    position: absolute;
+    z-index: 5;
+}
+
 
 nav a {
     color: white;
     padding: 10px 0;
     font-size: 18px;
     text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    height: fit-content;
+    transform: translateX(-900px);
+    position: relative;
+    z-index: 0;
+}
+
+.hero .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay button {
+    background-color: royalblue;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    height: 75px;
+    opacity: .9;
+    cursor: pointer;
+}
+
+.card {
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px lightgray;
+}
+
+.card .card-header {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.card-header h5 {
+    font-size: 18px;
+}
+
+h4,
+h5,
+hr,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.card-header hr {
+    margin: 5px 0;
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    text-wrap: nowrap;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#member-spotlight .section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#member-spotlight hr {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #666;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chamber-info {
+    width: 100%;
+    display: flex;
+}
+
+.chamber-info div {
+    width: 50%;
+}
+
+.class-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
