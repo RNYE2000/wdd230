@@ -30,6 +30,10 @@
         border-bottom: 2px solid white;
     }
 
+    .toggle-container-mobile{
+        visibility: hidden;
+    }
+
     .hero img {
         width: 100%;
         height: auto;
@@ -70,5 +74,24 @@
 
     section {
         display: flex;
+    }
+
+    .chamber-info{
+        flex-direction: row;
+    }
+
+    .chamber-info div {
+        width: 50%;
+    }
+
+    .class-info{
+        flex-direction: row;
+        width: 50%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .class-info span{
+        display: inline;
     }
 }

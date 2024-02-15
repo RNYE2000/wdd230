@@ -6,6 +6,30 @@ body {
     padding: 0;
 }
 
+.dark-mode{
+    background-color: black !important;
+    color: white !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.toggle-container-mobile{
+    display: none;
+}
+
+.toggle-container, .toggle-container-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-container p, .toggle-container-mobile p{
+    padding: 0;
+    margin: 0;
+}
+
 header {
     display: flex;
     width: 100%;
@@ -84,19 +108,32 @@ nav a {
     text-decoration: none;
 }
 
+.toggle-container{
+    width: 75px;
+}
+
+.sun, .moon{
+    font-size: 24px;
+}
+
+.sun:hover, .moon:hover{
+    cursor: pointer;
+    font-size: 32px;
+}
+
 main {
     display: flex;
     flex-direction: column;
     margin: 0;
-    overflow: auto;
+    overflow: none;
     position: relative;
     width: 100%;
-    height: 100%;
 }
 
 .hero {
     position: relative;
     overflow: hidden;
+    min-height: 400px;
 }
 
 .hero img {
@@ -184,11 +221,17 @@ p {
     margin: 10px 0;
 }
 
+.member-info p{
+    padding: 3px 0;
+}
+
 footer {
     background-color: #666;
     width: 100%;
     display: flex;
     justify-content: center;
+    color: white;
+    padding-bottom: 10px;
 }
 
 .footer-content {
@@ -200,14 +243,23 @@ footer {
 .chamber-info {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    padding: 25px 0;
 }
 
-.chamber-info div {
-    width: 50%;
+.chamber-info .contact p{
+    padding: 3px 0;
+    text-wrap: nowrap;
 }
 
 .class-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+}
+
+.class-info span{
+    display: none;
 }

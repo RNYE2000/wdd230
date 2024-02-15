@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rory Nye WDD230 Web Frontend Development</title>
+    <title>Rory Nye - WDD230 Web - Frontend Development</title>
     <meta property="og:title" content="WDD-230 Home Page">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <img class="profile-img" src="./images/me.jpg" alt="pf pic">
+        <img class="profile-img" src="./images/me.webp" alt="pf pic">
         <h1>Rory Nye</h1>
     </header>
     <div style="display: flex; padding:0; margin:0; justify-content: start; flex-direction: column; width: 60%;">
@@ -36,6 +36,17 @@
 
     </nav>
     <main>
+        <div style="position:relative; display: flex;height: 100%;">
+
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/temple-hero-small.webp">
+                <img style="position:absolute" class="hero" src="images/temple-hero-large.webp" alt="Laie Temple">
+            </picture>
+
+            <div class="herolabel">
+                <p>Laie Hawaii Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div>
             <section class="card">
@@ -71,7 +82,7 @@
         </p>
         <div>
             <p> United States of America</p>
-            <img src="./images/americanflag.png" alt="american flag" class="small-image">
+            <img src="./images/americanflag.webp" alt="american flag" class="small-image">
         </div>
         <p id="lastModified"></p>
     </footer>

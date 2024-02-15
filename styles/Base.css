@@ -30,13 +30,23 @@ body {
 
 }
 
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 main {
     max-width: 800px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3, 150px, 150px, 150px);
+    margin: 0 auto;
     width: 50%;
+    position: relative;
 }
 
 main div {
