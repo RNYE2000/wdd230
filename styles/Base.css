@@ -43,8 +43,6 @@ body {
 main {
     max-width: 800px;
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: repeat(3, 150px, 150px, 150px);
     margin: 0 auto;
     width: 75%;
     position: relative;
@@ -83,7 +81,6 @@ main h2 {
     padding: .5rem .75rem;
     background-color: #eee;
     color: #000;
-    position: left;
     top: 10px;
     right: 10px;
 }
