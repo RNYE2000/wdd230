@@ -13,12 +13,14 @@
         <h1>Lazy Load</h1>
     </header>
     <main>
-        <img src="phtoto 1" data-src="image1.jpg" width="400" height="600">
-        <img src="photo2.jpg" data-src="image2.jpg" width="400" height="600">
-        <img src="photo3.webp" data-src="image3.jpg" width="400" height="600">
-        <img src="photo4" data-src="image4.jpg" width="400" height="600">
-        <img src="photo5.jpg" data-src="image5.jpg" width="400" height="600">
-        <img src="photo6.jpg" data-src="image6.jpg" width="400" height="600">
+        <div>
+            <img src="phtoto 1" loading="lazy" data-src="image1.jpg" width="400" height="600">
+            <img src="photo2.jpg" loading="lazy" width="400" height="600">
+            <img src="photo3.webp" loading="lazy" width="400" height="600">
+            <img src="photo4" loading="lazy" width="400" height="600">
+            <img src="photo5.jpg" loading="lazy" width="400" height="600">
+            <img src="photo6.jpg" loading="lazy" width="400" height="600">
+        </div>
     </main>
     <footer>
         <p>Last modified: <span id="lastModified"></span></p>

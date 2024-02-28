@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rory Nye - WDD230 Web - Frontend Development</title>
+    <meta property="og:title" content="WDD-230 Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.ctfassets.net/0wjmk6wgfops/2Ug1ZjCIucSfTtjV9ClSca/a8923ed152e2283ab6ae37c1aebd94a5/Washington_Ave_winter_morning_credit_Albert_Lew_8234092f-e5ec-4c76-897b-4c53715b8d8c.jpg?q=70">
+    <meta property="og:url" content="https://rnye2000.github.io/wdd230/">
+    <meta name="WDD 230 - Web Frontend Development" content="Rory Nye course assignment portal">
+    <meta name="description" content="WDD 230 - Web Frontend Development, Rory Nye, Course Assignment Portal">
+    <meta name="author" content="Rory Nye">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/Base.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img class="profile-img" src="./images/me.webp" alt="pf pic">
+        <h1>Rory Nye</h1>
+    </header>
+
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+        <a href="form.html" target="_blank">Form</a>
+    </nav>
+    <main>
+        <form action="record.html" method="get">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}"
+                    title="Password must be at least 8 characters long and can only be alphanumeric" required>
+            </div>
+            <div>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="Please enter a valid email address ending with @byui.edu" required>
+            </div>
+            <div>
+                <label for="rating">Page Rating:</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+                <output for="rating"></output>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            Rory Nye
+        </p>
+        <div>
+            <p> United States of America</p>
+            <img src="./images/americanflag.webp" alt="american flag" class="small-image">
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
