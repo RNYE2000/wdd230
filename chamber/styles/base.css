@@ -6,26 +6,28 @@ body {
     padding: 0;
 }
 
-.dark-mode{
+.dark-mode {
     background-color: black !important;
     color: white !important;
 }
 
-.hide{
+.hide {
     display: none !important;
 }
 
-.toggle-container-mobile{
+.toggle-container-mobile {
     display: none;
 }
 
-.toggle-container, .toggle-container-mobile{
+.toggle-container,
+.toggle-container-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.toggle-container p, .toggle-container-mobile p{
+.toggle-container p,
+.toggle-container-mobile p {
     padding: 0;
     margin: 0;
 }
@@ -70,7 +72,6 @@ header {
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    position: left;
     top: 10px;
     right: 10px;
 }
@@ -108,15 +109,17 @@ nav a {
     text-decoration: none;
 }
 
-.toggle-container{
+.toggle-container {
     width: 75px;
 }
 
-.sun, .moon{
+.sun,
+.moon {
     font-size: 24px;
 }
 
-.sun:hover, .moon:hover{
+.sun:hover,
+.moon:hover {
     cursor: pointer;
     font-size: 32px;
 }
@@ -125,7 +128,6 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0;
-    overflow: none;
     position: relative;
     width: 100%;
 }
@@ -202,7 +204,6 @@ p {
     display: flex;
     align-items: center;
     padding: 5px 0;
-    text-wrap: nowrap;
 }
 
 .weather-content {
@@ -221,7 +222,7 @@ p {
     margin: 10px 0;
 }
 
-.member-info p{
+.member-info p {
     padding: 3px 0;
 }
 
@@ -247,9 +248,8 @@ footer {
     padding: 25px 0;
 }
 
-.chamber-info .contact p{
+.chamber-info .contact p {
     padding: 3px 0;
-    text-wrap: nowrap;
 }
 
 .class-info {
@@ -260,6 +260,6 @@ footer {
     width: 100%;
 }
 
-.class-info span{
+.class-info span {
     display: none;
 }

@@ -32,16 +32,21 @@
             background-color: #f2f2f2;
             border-radius: 10px;
             display: flex;
-
+            flex-direction: column;
         }
+
 
         #sidebar-content {
             display: flex;
             flex-direction: column;
-            width: 100%;
             padding: 10px;
         }
 
+        #sidebar-content h2 {
+            text-align: center;
+        }
+
+        #sidebar-content h2,
         #sidebar-content h3 {
             padding: 0;
             margin: 0;
@@ -61,6 +66,27 @@
             padding: 0;
             margin: 0;
         }
+
+        .sidebar-section {
+            border: 1px solid lightgray;
+            padding: 15px;
+        }
+
+        .sidebar-section hr {
+            margin-top: 5px;
+        }
+
+        .sidebar-event:last-child {
+            border-bottom: none !important;
+        }
+
+        .hiking-highlight {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
 
         /* Gallery */
         .gallery {
@@ -140,10 +166,13 @@
     <main>
         <div class="grid-container">
             <div class="sidebar">
-
                 <div id="sidebar-content">
-                    <div>
+                    <h1 id="display-message">adsf</h1>
+                </div>
+                <div id="sidebar-content">
+                    <div class="sidebar-section">
                         <h2>Upcoming Events</h2>
+                        <hr>
                         <div class="sidebar-event">
                             <div>
                                 <h3>Business Beyond Borders</h3>
@@ -160,18 +189,66 @@
                         </div>
                     </div>
                 </div>
+                <div id="sidebar-content">
+                    <div class="sidebar-section">
+                        <h2>Popular Hiking Spots</h2>
+                        <hr>
+                        <div class="sidebar-event">
+                            <div class="hiking-highlight">
+                                <div style="display: flex; width: 100%; padding:10px; overflow:hidden">
+                                    <img style="display: flex; width: 100%;" src="./images/Ogdencity.jpg" alt="">
+                                </div>
+                                <p>Place Holder</p>
+                            </div>
+                        </div>
+                        <div class="sidebar-event">
+                            <div class="hiking-highlight">
+                                <div style="display: flex; width: 100%; padding:10px; overflow:hidden">
+                                    <img style="display: flex; width: 100%;" src="./images/Ogdencity.jpg" alt="">
+                                </div>
+                                <p>Place Holder</p>
+                            </div>
+                        </div>
+                        <div class="sidebar-event">
+                            <div class="hiking-highlight">
+                                <div style="display: flex; width: 100%; padding:10px; overflow:hidden">
+                                    <img style="display: flex; width: 100%;" src="./images/Ogdencity.jpg" alt="">
+                                </div>
+                                <p>Place Holder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="main-content">
                 <h2>Local Photos of Interest</h2>
                 <div class="gallery">
                     <div class="image-container">
-                        <img data-src="discover-images/OG1.webp" alt="Image 1">
-                        <img data-src="discover-images/OG2.webp" alt="Image 2">
-                        <img data-src="discover-images/OG3.webp" alt="Image 3">
-                        <img data-src="discover-images/OG4.webp" alt="Image 4">
-                        <img data-src="discover-images/OG5.webp" alt="Image 5">
-                        <img data-src="discover-images/OG6.webp" alt="Image 6">
-                    </div>>
+                        <figure>
+                            <img data-src="discover-images/OG1.webp" alt="Image 1" loading="lazy">
+                            <figcaption>25th street</figcaption>
+                        </figure>
+                        <figure>
+                            <img data-src="discover-images/OG2.webp" alt="Image 2" loading="lazy">
+                            <figcaption>Ogden City sign</figcaption>
+                        </figure>
+                        <figure>
+                            <img data-src="discover-images/OG3.webp" alt="Image 3" loading="lazy">
+                            <figcaption>Ogden city Bank</figcaption>
+                        </figure>
+                        <figure>
+                            <img data-src="discover-images/OG4.webp" alt="Image 4" loading="lazy">
+                            <figcaption>South Ogden City offices</figcaption>
+                        </figure>
+                        <figure>
+                            <img data-src="discover-images/OG5.webp" alt="Image 5" loading="lazy">
+                            <figcaption>Weber State University</figcaption>
+                        </figure>
+                        <figure>
+                            <img data-src="discover-images/OG6.webp" alt="Image 6" loading="lazy">
+                            <figcaption>Weber State Campus</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,3 +290,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/lazyload.js"></script>
+    <script src="scripts/user-visits.js"></script>
+</body>
+
+</html>
