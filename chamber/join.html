@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Chamber-of-Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.ctfassets.net/0wjmk6wgfops/2Ug1ZjCIucSfTtjV9ClSca/a8923ed152e2283ab6ae37c1aebd94a5/Washington_Ave_winter_morning_credit_Albert_Lew_8234092f-e5ec-4c76-897b-4c53715b8d8c.jpg?q=70">
+    <meta property="og:url" content="https://rnye2000.github.io/wdd230/chamber">
+    <meta name="WDD 230 - Chamber-of-Commerce" content="Chamber-of-Commerce-Joinpage">
+    <meta name="description" content="Chamber-of-Commerce-Joinpage">
+    <meta name="author" content="Rory Nye">
+    <title>Ogden City Chamber of Commerce - Join</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="caption">
+            <div class="flag">
+                <img src="./images/oc-flag.webp" width="75" alt="Ogden City Logo">
+            </div>
+            <div class="site-name">
+                <h1>Ogden City Chamber of Commerce</h1>
+                <h6>Chamber of Commerce</h6>
+            </div>
+        </div>
+        <div class="toggle-container-mobile" id="mobile-toggle">
+            <span class="sun">
+                🌞
+            </span>
+            <span class="moon hide">
+                🌚
+            </span>
+        </div>
+        <div class="menu-container">
+            <a id="menu"></a>
+        </div>
+        <nav class="navigation-full">
+            <a href="./index.html">Home</a>
+            <a href="./discover.html">Discover</a>
+            <a href="">Calendar</a>
+            <a href="./join.html">Join</a>
+            <div class="toggle-container" id="large-toggle">
+                <span class="sun">
+                    🌞
+                </span>
+                <span class="moon hide">
+                    🌚
+                </span>
+            </div>
+        </nav>
+    </header>
+    <nav class="navigation">
+        <a href="">Home</a>
+        <a href="">Discover</a>
+        <a href="">Calendar</a>
+        <a href="">Join</a>
+    </nav>
+    <main>
+        <form action="thankyou.html" method="get">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="title">Title/Position:</label>
+            <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-]{7,}">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="business">Business/Organization Name:</label>
+            <input type="text" id="business" name="business" required>
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership" required>
+                <option value="NP">NP Membership</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <input type="hidden" id="submissionTime" name="submissionTime">
+            <button type="submit">Submit</button>
+        </form>
+        <div class="membership-benefits">
+            <h3>Membership Benefits</h3>
+            <ul style="list-style-type: none;">
+                <li><strong style=" color: #00cc99;">NP Membership:</strong> No fee, access to networking events.</li>
+                <li><strong style="color: #cd7f32;">Bronze Membership:</strong> Basic benefits + advertising
+                    opportunities.</li>
+                <li><strong style="color: #c0c0c0;">Silver Membership:</strong> Bronze benefits + event discounts.</li>
+                <li><strong style="color: #ffd700;">Gold Membership:</strong> Silver benefits + premium advertising
+                    spots.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="chamber-info">
+                <div>
+                    <img width="80" src="./images/oc-flag.png" alt="">
+                    <div>
+                        <h6>Ogden City Chamber of Commerce</h6>
+                    </div>
+                </div>
+                <div class="contact">
+                    <p>
+                        Phone: 801-629-8000
+                    </p>
+                    <p>communications@ogdencity.com</p>
+                    <p>
+                        2549 Washington Blvd <br>
+                        Ogden, UT 84401
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="class-info">
+                <p>©2024 Ogden City</p>
+                <span>|</span>
+                <p><strong>Rory Nye</strong></p>
+                <span>|</span>
+                <p>WDD 230 Project</p>
+                <span>|</span>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script>
+        // Set submission time on form load
+        document.getElementById('submissionTime').value = Date.now();
+    </script>
+</body>
+
+</html>
