@@ -24,7 +24,7 @@
         <img class="profile-img" src="./images/me.webp" alt="pf pic">
         <h1>Rory Nye</h1>
     </header>
-    <div style="display: flex; padding:0; margin:0; justify-content: start; flex-direction: column; width: 60%;">
+    <div style="display: flex; padding:0; margin:0; justify-content: start; flex-direction: column; width: 75%;">
         <a id="menu" href="#"></a>
     </div>
     <nav class="navigation">
@@ -71,12 +71,23 @@
                     <li>10</li>
                 </ul>
             </section>
-            <section class="card">
-                <h3>Information</h3>
-                <h4>West Haven, Utah</h4>
-                <div style="display: flex; align-items: center;" id="counter">Page visits: 0</div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <section class="card">
+                    <h3>Information</h3>
+                    <h4>West Haven, Utah</h4>
+                    <hr>
+                    <div style="display: flex; justify-content: center;">
+                        <img id="weather-icon"></img>
+                        <p>
+                            <span id="temp"></span>
+                            °F - <span id="condition"> </span>
+                        </p>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center;" id="counter">Page visits:
+                        0</div>
 
-            </section>
+                </section>
+            </div>
         </div>
     </main>
     <iframe
@@ -97,6 +108,7 @@
     <script src="./hamburger.js"></script>
     <script src="./getdates.js"></script>
     <script src="./visitcounter.js"></script>
+    <script src="./weather.js"></script>
 </body>
 
 </html>
