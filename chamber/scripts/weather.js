@@ -8,7 +8,7 @@ const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}
 var currentTemp = document.getElementById('current-temp');
 var humidity = document.getElementById('humidity');
 var windChill = document.getElementById('wind-chill');
-var weatherIcon = document.getElementById('weathericon');
+var weatherIcon = document.getElementById('weather-icon');
 var captionDesc = document.getElementById('condition');
 var forecast = document.getElementById('forecast');
 
