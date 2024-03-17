@@ -6,6 +6,25 @@ body {
     padding: 0;
 }
 
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #0056b3;
+    color: white;
+}
+
+.close-banner{
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-banner:hover{
+    transform: scale(1.2);
+}
+
 .dark-mode {
     background-color: black !important;
     color: white !important;
@@ -209,6 +228,7 @@ p {
 .weather-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #member-spotlight .section-header {

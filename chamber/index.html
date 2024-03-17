@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-
 </head>
 
 <body>
+    <div class="banner">
+
+    </div>
     <header>
         <div class="caption">
             <div class="flag">
@@ -96,14 +98,34 @@
                         <hr>
                     </div>
                     <div class="weather-content">
-                        <div>
-
+                        <div style="display: flex; flex-direction: column;">
+                            <div>
+                                <h3 style="margin:0;padding:0">West Haven</h3>
+                            </div>
+                            <div>
+                                <div style="display: flex; justify-content: center;">
+                                    <img id="weather-icon"></img>
+                                    <p>
+                                        <span id="current-temp"></span>
+                                        &nbsp; - <span id="condition"> </span>
+                                    </p>
+                                </div> 
+                            </div>
+                            <div>
+                                <p>&emsp;Humidity: <span id="humidity"></span></p>
+                            </div>
+                            <div>
+                                <p>&emsp;Wind Chill : <span id="wind-chill"></span></p>
+                            </div>
                         </div>
-                        <div>
-                            <p>Humidity: 35%</p>
-                        </div>
-                        <div>
-                            <p>Wind Chill : N/A</p>
+                        <div style="display: flex; flex-direction: column; padding-top: 20px;">
+                            <div>
+                                <h5>Forecast</h5>
+                                <hr>
+                            </div>
+                            <div id="forecast">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -203,6 +225,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
