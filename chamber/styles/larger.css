@@ -2,6 +2,7 @@
 
     .flag {
         display: block;
+        padding-left: 50px;
     }
 
     .menu-container {
@@ -89,5 +90,57 @@
 
     .class-info span {
         display: inline;
+    }
+
+    /* Discovery.html Styles */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        grid-template-rows: fit-content;
+        grid-gap: 20px;
+    }
+    
+    .main-content h2 {
+        text-align: initial;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+
+    /* Join.html Styles */
+    #join-main{
+        flex-direction: row;
+    }
+
+    #join-sidebar{
+        width: 25%;
+        border-right: 3px solid black;
+        padding: 10px;
+    }
+
+    #membership-benefits{
+        width: 75%;
+        padding: 10px;
+    }
+
+    /* Directory.html Styles */
+    .view-option-container{
+        justify-content: flex-start !important;
+    }
+
+    #view-container{
+        width: 75% !important;
+    }
+
+    .card-view{
+        flex-direction: row !important;
+    }
+
+    .directory-card{
+        width: 300px !important;
     }
 }

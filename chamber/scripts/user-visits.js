@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let message = document.getElementById('display-message');
 
-    if (checkForInitalVisit() == 0) {
+    if (checkForInitalVisit() == 0 || checkForInitalVisit() == null){
         setInitialValues();
         message.innerHTML = 'Welcome! Let us know if you have any questions.'
     } else if (diffDates() <= 1) {
@@ -18,12 +18,12 @@ function checkForInitalVisit() {
 }
 
 function setInitialValues() {
-    localStorage.setItem('numberOfVisits', 0);
+    localStorage.setItem('numberOfVisits', 1);
     localStorage.setItem('dateLastVisited', Date.now());
 }
 
 function diffDates() {
     let lastVisit = parseInt(localStorage.getItem('dateLastVisited'));
     let visit = Date.now();
-    return (visit - lastVisit) / (1000 * 60 * 60);
+    return Math.round((visit - lastVisit) / (1000 * 60 * 60));
 }

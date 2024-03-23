@@ -15,7 +15,8 @@
     <title>Ogden City Chamber of Commerce - Join</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
+
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 <img src="./images/oc-flag.webp" width="75" alt="Ogden City Logo">
             </div>
             <div class="site-name">
-                <h1>Ogden City Chamber of Commerce</h1>
+                <h1>Ogden City</h1>
                 <h6>Chamber of Commerce</h6>
             </div>
         </div>
@@ -41,9 +42,9 @@
             <a id="menu"></a>
         </div>
         <nav class="navigation-full">
-            <a href="./index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="./discover.html">Discover</a>
-            <a href="">Calendar</a>
+            <a href="./directory.html">Directory</a>
             <a href="./join.html">Join</a>
             <div class="toggle-container" id="large-toggle">
                 <span class="sun">
@@ -56,48 +57,97 @@
         </nav>
     </header>
     <nav class="navigation">
-        <a href="">Home</a>
-        <a href="">Discover</a>
-        <a href="">Calendar</a>
-        <a href="">Join</a>
+        <a href="index.html">Home</a>
+        <a href="./discover.html">Discover</a>
+        <a href="./directory.html">Directory</a>
+        <a href="./join.html">Join</a>
     </nav>
-    <main>
-        <form action="thankyou.html" method="get">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-            <label for="title">Title/Position:</label>
-            <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-]{7,}">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="example@example.com">
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="business">Business/Organization Name:</label>
-            <input type="text" id="business" name="business" required>
-            <label for="membership">Membership Level:</label>
-            <select id="membership" name="membership" required>
-                <option value="" label="placeholder"></option>
-                <option value="NP">NP Membership</option>
-                <option value="Bronze">Bronze Membership</option>
-                <option value="Silver">Silver Membership</option>
-                <option value="Gold">Gold Membership</option>
-            </select>
-            <label for="description">Description:</label>
-            <textarea id="description" name="description"></textarea>
-            <input type="hidden" id="submissionTime" name="submissionTime">
-            <button type="submit">Submit</button>
-        </form>
-        <div class="membership-benefits">
-            <h3>Membership Benefits</h3>
-            <ul style="list-style-type: none;">
-                <li><strong>NP Membership:</strong> No fee, access to networking events.</li>
-                <li><strong>Bronze Membership:</strong> Basic benefits + advertising
-                    opportunities.</li>
-                <li><strong>Silver Membership:</strong> Bronze benefits + event discounts.</li>
-                <li><strong>Gold Membership:</strong> Silver benefits + premium advertising
-                    spots.</li>
-            </ul>
+    <main id="join-main">
+        <div id="join-sidebar">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="form-element">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="title">Title/Position:</label>
+                        <input type="text" id="title" name="title" required pattern="[A-Za-z\s\-]{7,}">
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@example.com">
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="business">Business/Organization Name:</label>
+                        <input type="text" id="business" name="business" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="membership">Membership Level:</label>
+                        <select id="membership" name="membership" required>
+                            <option value=""></option>
+                            <option value="NP">NP Membership</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <input type="hidden" id="submissionTime" name="submissionTime">
+                        <button type="submit">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="membership-benefits">
+            <div style="width: 100%; text-align: center;">
+                <h2>Membership Benefits</h2>
+            </div>
+            <div class="card" style="height: 100px; display: flex; flex-direction: column; justify-content: center;">
+                <div class="card-header">
+                    <h4>NP Membership</h4>
+                </div>
+                <div class="card-content">
+                    <p>No fee, access to networking events.</p>
+                </div>
+            </div>
+            <div class="card" style="height: 100px; display: flex; flex-direction: column; justify-content: center;">
+                <div class="card-header">
+                    <h4>Bronze Membership</h4>
+                </div>
+                <div class="card-content">
+                    <p>Basic benefits + advertising opportunities.</p>
+                </div>
+            </div>
+            <div class="card" style="height: 100px; display: flex; flex-direction: column; justify-content: center;">
+                <div class="card-header">
+                    <h4>Silver Membership</h4>
+                </div>
+                <div class="card-content">
+                    <p>Bronze benefits + event discounts.</p>
+                </div>
+            </div>
+            <div class="card" style="height: 100px; display: flex; flex-direction: column; justify-content: center;">
+                <div class="card-header">
+                    <h4>Gold Membership</h4>
+                </div>
+                <div class="card-content">
+                    <p>Silver benefits + premium advertising spots.</p>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -105,7 +155,7 @@
         <div class="footer-content">
             <div class="chamber-info">
                 <div>
-                    <img width="80" src="./images/oc-flag.png" alt="">
+                    <img width="80" src="./images/oc-flag.webp" alt="">
                     <div>
                         <h6>Ogden City Chamber of Commerce</h6>
                     </div>

@@ -103,7 +103,7 @@ header {
     content: "X";
 }
 
-.hide {
+.show {
     display: flex;
     flex-direction: column;
 }
@@ -129,7 +129,7 @@ nav a {
 }
 
 .toggle-container {
-    width: 75px;
+   width: 75px;
 }
 
 .sun,
@@ -284,54 +284,259 @@ footer {
     display: none;
 }
 
-/* form css */
-.form-container {
+.grid-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#sidebar-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#sidebar-content h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar-content h2,
+#sidebar-content h3 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#sidebar-content .sidebar-event {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sidebar-content .subtitle {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-section {
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+
+.sidebar-section hr {
+    margin-top: 5px;
+}
+
+.sidebar-event:last-child {
+    border-bottom: none !important;
+}
+
+.hiking-highlight {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    justify-content: center;
 }
 
-/* Styles for the form */
-form {
-    width: 70%;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-form label {
-    font-weight: bold;
-    margin-bottom: 8px;
-}
+/* Gallery */
 
-form input,
-form select,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-form button {
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
-
-.membership-benefits {
+.main-content h2 {
     text-align: center;
 }
+
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container figure {
+    margin: 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
+
+.image-container figcaption {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.image-container img{
+    width: 500px;
+    margin-top: 15px;
+}
+
+#join-main{
+            display: flex;
+            width: 100%;
+            min-height: 70vh;
+            flex-direction: column;
+        }
+
+        #join-sidebar{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #join-sidebar fieldset{
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        #join-sidebar legend{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #join-sidebar .form-element{
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #join-sidebar label{
+            width: 40%;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        #join-sidebar input, #join-sidebar select, #join-sidebar textarea{
+            width: 60%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        #join-sidebar textarea{
+            height: 100px;
+        }
+
+        #join-sidebar .form-submit{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #join-sidebar button{
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #membership-benefits{
+            width: 100%;
+        }
+
+        /* Join */
+        #join-main{
+            display: flex;
+            width: 100%;
+            min-height: 70vh;
+            flex-direction: column;
+        }
+
+        #join-sidebar{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #join-sidebar fieldset{
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        #join-sidebar legend{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #join-sidebar .form-element{
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #join-sidebar label{
+            width: 40%;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        #join-sidebar input, #join-sidebar select, #join-sidebar textarea{
+            width: 60%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        #join-sidebar textarea{
+            height: 100px;
+        }
+
+        #join-sidebar .form-submit{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #join-sidebar button{
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #membership-benefits{
+            width: 100%;
+        }

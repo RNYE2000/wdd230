@@ -1,0 +1,65 @@
+[
+    {
+        "name": "MarketStar Corporation",
+        "address": "1695 E. Skyline Drive, Suite 200, Ogden, UT 84403",
+        "phone": "(801) 990-3200",
+        "website": "https://www.marketstar.com/",
+        "image": "marketstar_logo.webp",
+        "membership_level": "Platinum",
+        "other_info": "MarketStar is a global sales and marketing outsourcing company."
+      },
+      {
+        "name": "Alliance Health",
+        "address": "3765 Wall Avenue, Ogden, UT 84405",
+        "phone": "(801) 528-5000",
+        "website": "https://www.alliancehealth.com/",
+        "image": "alliance_health_logo.webp",
+        "membership_level": "Gold",
+        "other_info": "Alliance Health is a leader in technology-enabled health solutions."
+      },
+      {
+        "name": "Aerospace Corporation",
+        "address": "1899 N Research Parkway, North Logan, UT 84341",
+        "phone": "(801) 645-4037",
+        "website": "https://aerospace.org/",
+        "image": "aerospace_corp_logo.webp",
+        "membership_level": "Silver",
+        "other_info": "Aerospace Corporation provides independent technical and scientific research, development, and advisory services to national security space programs."
+      },
+      {
+        "name": "Weber State University",
+        "address": "3848 Harrison Blvd, Ogden, UT 84408",
+        "phone": "(801) 626-6000",
+        "website": "https://www.weber.edu/",
+        "image": "weber_state_uni_logo.webp",
+        "membership_level": "Platinum",
+        "other_info": "Weber State University offers a range of undergraduate and graduate programs."
+      },
+      {
+        "name": "Autoliv",
+        "address": "1220 S 630 E, Ogden, UT 84404",
+        "phone": "(801) 625-9300",
+        "website": "https://www.autoliv.com/",
+        "image": "autoliv_logo.webp",
+        "membership_level": "Gold",
+        "other_info": "Autoliv is a global leader in automotive safety systems."
+      },
+      {
+        "name": "McKay Dee Hospital",
+        "address": "4401 Harrison Blvd, Ogden, UT 84403",
+        "phone": "(801) 387-2800",
+        "website": "https://intermountainhealthcare.org/locations/mckay-dee-hospital/",
+        "image": "mckay_dee_hospital_logo.webp",
+        "membership_level": "Silver",
+        "other_info": "McKay Dee Hospital provides a wide range of healthcare services."
+      },
+      {
+        "name": "Big-D Construction",
+        "address": "404 W 400 N, Ogden, UT 84404",
+        "phone": "(801) 627-1400",
+        "website": "https://www.big-d.com/",
+        "image": "bigd_construction_logo.webp",
+        "membership_level": "Gold",
+        "other_info": "Big-D Construction is a construction management and general contracting company."
+      }
+]

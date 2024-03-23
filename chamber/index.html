@@ -29,7 +29,7 @@
                 <img src="./images/oc-flag.webp" width="75" alt="Ogden City Logo">
             </div>
             <div class="site-name">
-                <h1>Ogden City Chamber of Commerce</h1>
+                <h1>Ogden City</h1>
                 <h6>Chamber of Commerce</h6>
             </div>
         </div>
@@ -45,9 +45,9 @@
             <a id="menu"></a>
         </div>
         <nav class="navigation-full">
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="./discover.html">Discover</a>
-            <a href="">Calendar</a>
+            <a href="./directory.html">Directory</a>
             <a href="./join.html">Join</a>
             <div class="toggle-container" id="large-toggle">
                 <span class="sun">
@@ -60,17 +60,17 @@
         </nav>
     </header>
     <nav class="navigation">
-        <a href="">Home</a>
-        <a href="">Discover</a>
-        <a href="">Calendar</a>
-        <a href="">Join</a>
+        <a href="index.html">Home</a>
+        <a href="./discover.html">Discover</a>
+        <a href="./directory.html">Directory</a>
+        <a href="./join.html">Join</a>
     </nav>
     <main>
         <section class="hero">
             <img src="./images/Ogdencity.webp" alt="">
             <!-- <source media="(max-width: 500px)" srcset="images/Ogdencity.webp"> -->
             <div class="overlay">
-                <button>Join the Chamber</button>
+                <button id="join-btn">Join the Chamber</button>
             </div>
         </section>
         <section>
@@ -228,6 +228,13 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/weather.js"></script>
+<script> 
+document.getElementById("join-btn").addEventListener("click", () => {
+    window.location.href = "./join.html"
+})
+
+
+</script>
 </body>
 
 </html>

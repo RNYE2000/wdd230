@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Chamber-of-Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.ctfassets.net/0wjmk6wgfops/2Ug1ZjCIucSfTtjV9ClSca/a8923ed152e2283ab6ae37c1aebd94a5/Washington_Ave_winter_morning_credit_Albert_Lew_8234092f-e5ec-4c76-897b-4c53715b8d8c.jpg?q=70">
+    <meta property="og:url" content="https://rnye2000.github.io/wdd230/chamber">
+    <meta name="WDD 230 - Chamber-of-Commerce" content="Chamber-of-Commerce-Homepage">
+    <meta name="description" content="Chamber-of-Commerce-Homepage">
+    <meta name="author" content="Rory Nye">
+    <title>Ogden City Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../favicon.ico">
+
+    <style>
+
+        .directory-section{
+            display: flex;
+            justify-content: center;
+        }
+
+        .view-option-container{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            width: 75%;
+        }
+
+        .view-option{
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+
+        .option{
+            width: 50%;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: none;
+        }
+
+        .option:first-child{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .option:last-child{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .option:hover{
+            /* background-color: #007bff; */
+            background-color: white;
+            color: #0056b3;
+        }
+
+        #view-container{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+
+        .card-view{
+            flex-direction: column;
+        }
+
+        .list-view{
+            flex-direction: column;
+        }
+
+        .directory-card{
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+        }
+
+        .list{
+            border-bottom: 2px solid gray;
+            padding: 10px;
+        }
+
+        .active-selection{
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="caption">
+            <div class="flag">
+                <img src="./images/oc-flag.webp" width="75" alt="Ogden City Logo">
+            </div>
+            <div class="site-name">
+                <h1>Ogden City</h1>
+                <h6>Chamber of Commerce</h6>
+            </div>
+        </div>
+        <div class="toggle-container-mobile" id="mobile-toggle">
+            <span class="sun">
+                🌞
+            </span>
+            <span class="moon hide">
+                🌚
+            </span>
+        </div>
+        <div class="menu-container">
+            <a id="menu"></a>
+        </div>
+        <nav class="navigation-full">
+            <a href="index.html">Home</a>
+            <a href="./discover.html">Discover</a>
+            <a href="./directory.html">Directory</a>
+            <a href="./join.html">Join</a>
+            <div class="toggle-container" id="large-toggle">
+                <span class="sun">
+                    🌞
+                </span>
+                <span class="moon hide">
+                    🌚
+                </span>
+            </div>
+        </nav>
+    </header>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="./discover.html">Discover</a>
+        <a href="./directory.html">Directory</a>
+        <a href="./join.html">Join</a>
+    </nav>
+    <main>
+        <section class="directory-section">
+            <div class="view-option-container">
+                    <div class="view-option">
+                        <button id="card-option" class="option" onclick="changeView('card')">
+                            <i class="fa-solid fa-sim-card"></i></i>Cards
+                        </button>
+                        <button id="list-option" class="option" onclick="changeView('list')">
+                            <i class="fa-solid fa-list"></i>List
+                        </button>
+                    </div>
+            </div>
+        </section>
+        <section style="display: flex; justify-content: center;">
+            <div id="view-container">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="chamber-info">
+                <div>
+                    <img width="80" src="./images/oc-flag.webp" alt="">
+                    <div>
+                        <h6>Ogden City Chamber of Commerce</h6>
+                    </div>
+                </div>
+                <div class="contact">
+                    <p>
+                        Phone: 801-629-8000
+                    </p>
+                    <p>communications@ogdencity.com</p>
+                    <p>
+                        2549 Washington Blvd <br>
+                        Ogden, UT 84401
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="class-info">
+                <p>©2024 Ogden City</p>
+                <span>|</span>
+                <p><strong>Rory Nye</strong></p>
+                <span>|</span>
+                <p>WDD 230 Project</p>
+                <span>|</span>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/change-view.js"></script>
+</body>
+
+</html>
